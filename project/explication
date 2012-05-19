@@ -1,0 +1,10 @@
+resolution d'un voyageur de commerce à 50 par algo génétique
+(trouver le plus court chemin entre x points, en ne passant qu'uns fois par chaque, et en faisant une boucle)
+
+mutation : 1 % (pour les nouveau nés uniquement)
+
+selection : 50 % (on garde les 50% meilleur, et on les fait se "reproduire" ensemble)
+
+critère de selection: avoir le plus cout chemin total
+
+(vidéo en temps temps réel)

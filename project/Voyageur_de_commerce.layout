@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include/BitArray.h" open="0" top="0" tabpos="3">
+		<Cursor position="372" topLine="0" />
+	</File>
+	<File name="include/Villes.h" open="1" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include/Voyageur.h" open="0" top="0" tabpos="0">
+		<Cursor position="570" topLine="3" />
+	</File>
+	<File name="include/entity.h" open="0" top="0" tabpos="3">
+		<Cursor position="58" topLine="0" />
+	</File>
+	<File name="include/structures.h" open="0" top="0" tabpos="4">
+		<Cursor position="205" topLine="3" />
+	</File>
+	<File name="macros.h" open="0" top="0" tabpos="0">
+		<Cursor position="173" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="131" topLine="0" />
+	</File>
+	<File name="src/BitArray.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2613" topLine="88" />
+	</File>
+	<File name="src/Villes.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="2664" topLine="93" />
+	</File>
+	<File name="src/Voyageur.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="8377" topLine="277" />
+	</File>
+	<File name="src/entity.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="53" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

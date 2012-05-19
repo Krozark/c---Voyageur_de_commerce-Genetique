@@ -1,0 +1,14 @@
+#include "include/Villes.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+     srand(time(NULL));
+
+    Villes ville_t(5);
+    ville_t.Start(1000,100);
+
+    return 0;
+}
