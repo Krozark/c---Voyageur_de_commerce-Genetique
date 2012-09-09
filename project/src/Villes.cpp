@@ -66,27 +66,27 @@ void Villes::Start(unsigned int nb_voyageur,unsigned int iteration_max)
 	// Start the game loop
 	unsigned int cpt=0;
 	bool run=false;
-    while (App.IsOpen() || cpt<iteration_max)
+    while (App.isOpen() || cpt<iteration_max)
     {
         // Process events
         sf::Event Event;
-        while (App.PollEvent(Event))
+        while (App.pollEvent(Event))
         {
             // Close window : exit
-            if (Event.Type == sf::Event::Closed)
-                App.Close();
-            else if ((Event.Type == sf::Event::KeyPressed) && (Event.Key.Code == sf::Keyboard::Escape))
+            if (Event.type == sf::Event::Closed)
+                App.close();
+            else if ((Event.type == sf::Event::KeyPressed) && (Event.key.code == sf::Keyboard::Escape))
             {
-                App.Close();
+                App.close();
                 return;
             }
-            else if ((Event.Type == sf::Event::KeyPressed) && (Event.Key.Code == sf::Keyboard::Space))
+            else if ((Event.type == sf::Event::KeyPressed) && (Event.key.code == sf::Keyboard::Space))
             {
                 run = !run;
             }
         }
         // Clear screen
-        App.Clear();
+        App.clear();
 
         if (run)
         {
@@ -136,7 +136,7 @@ void Villes::Start(unsigned int nb_voyageur,unsigned int iteration_max)
                 }
                 voy[u].Inverse(voy[(unsigned int)randBorne(nb_voyageur_2,nb_voyageur)],start,end); // on inverse les bits avec ceux en params
 
-                if(randMax(50)<=1)
+                if(randMax(100)<=1)
                 {
                     unsigned int a=0,b=0;
 
@@ -158,41 +158,41 @@ void Villes::Start(unsigned int nb_voyageur,unsigned int iteration_max)
         for(unsigned int i=1;i<size;++i)
         {
             sf::ConvexShape Line(4);
-            Line.SetOutlineColor(sf::Color::Green);
-            Line.SetFillColor(sf::Color::Green);
-            Line.SetOutlineThickness(1);
+            Line.setOutlineColor(sf::Color::Green);
+            Line.setFillColor(sf::Color::Green);
+            Line.setOutlineThickness(1);
 
             float xa= pos[res[i]][0]*18,
                          ya= pos[res[i]][1]*9,
                          xb=pos[res[i-1]][0]*18,
                          yb=pos[res[i-1]][1]*9;
 
-            Line.SetPoint(0,sf::Vector2f(xa,ya));
-            Line.SetPoint(3,sf::Vector2f(xa,ya));
-            Line.SetPoint(1,sf::Vector2f(xb,yb));
-            Line.SetPoint(2,sf::Vector2f(xb,yb));
-            App.Draw(Line);
+            Line.setPoint(0,sf::Vector2f(xa,ya));
+            Line.setPoint(3,sf::Vector2f(xa,ya));
+            Line.setPoint(1,sf::Vector2f(xb,yb));
+            Line.setPoint(2,sf::Vector2f(xb,yb));
+            App.draw(Line);
         }
 
         sf::ConvexShape Line(4);
-        Line.SetOutlineColor(sf::Color::Green);
-        Line.SetFillColor(sf::Color::Green);
-        Line.SetOutlineThickness(1);
+        Line.setOutlineColor(sf::Color::Green);
+        Line.setFillColor(sf::Color::Green);
+        Line.setOutlineThickness(1);
 
         float xa= pos[res[0]][0]*18,
              ya= pos[res[0]][1]*9,
              xb=pos[res[size-1]][0]*18,
              yb=pos[res[size-1]][1]*9;
 
-        Line.SetPoint(0,sf::Vector2f(xa,ya));
-        Line.SetPoint(3,sf::Vector2f(xa,ya));
-        Line.SetPoint(1,sf::Vector2f(xb,yb));
-        Line.SetPoint(2,sf::Vector2f(xb,yb));
-        App.Draw(Line);
+        Line.setPoint(0,sf::Vector2f(xa,ya));
+        Line.setPoint(3,sf::Vector2f(xa,ya));
+        Line.setPoint(1,sf::Vector2f(xb,yb));
+        Line.setPoint(2,sf::Vector2f(xb,yb));
+        App.draw(Line);
 
         // Update the window
         //sf::Sleep(1);
-        App.Display();
+        App.display();
     }
 };
 
